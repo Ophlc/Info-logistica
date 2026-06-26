@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rota Zar013 — Trabalho Escolar: Logística, Porto e Banco de Dados</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="logo-mark">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="5" r="2"/>
+        <line x1="12" y1="7" x2="12" y2="21"/>
+        <path d="M5 14a7 7 0 0 0 14 0"/>
+        <line x1="5" y1="14" x2="3" y2="14"/>
+        <line x1="19" y1="14" x2="21" y2="14"/>
+      </svg>
+    </div>
+    <span class="nav-name">Rota <span>Zar013</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#logistica">Logística</a></li>
+    <li><a href="#porto">Porto de Santos</a></li>
+    <li><a href="#processo">Como Funciona</a></li>
+    <li><a href="#banco">Banco de Dados</a></li>
+    <li><a href="#baixada">Baixada Santista</a></li>
+    <li><a href="#glossario">Glossário</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mob-menu" id="mobMenu">
+  <a href="#logistica"  onclick="closeMenu()">📦 Logística</a>
+  <a href="#porto"      onclick="closeMenu()">⚓ Porto de Santos</a>
+  <a href="#processo"   onclick="closeMenu()">🔄 Como Funciona</a>
+  <a href="#banco"      onclick="closeMenu()">💾 Banco de Dados</a>
+  <a href="#baixada"    onclick="closeMenu()">🌊 Baixada Santista</a>
+  <a href="#glossario"  onclick="closeMenu()">📖 Glossário</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge reveal">🎓 Trabalho Escolar — Rota Zar013</div>
+  <h1 class="reveal">Logística, Portos e<br><em>Banco de Dados</em></h1>
+  <p class="reveal">Entenda de um jeito simples como os produtos viajam pelo mundo, o papel do Porto de Santos e como os computadores organizam tudo isso com banco de dados.</p>
+  <div class="hero-cta reveal">
+    <a href="#logistica" class="btn btn-primary">Começar a Explorar</a>
+    <a href="#glossario" class="btn btn-ghost">Ver Glossário</a>
+  </div>
+  <svg class="hero-ship" viewBox="0 0 900 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="100" y="200" width="700" height="60" rx="6" fill="white"/>
+    <rect x="200" y="130" width="500" height="75" rx="4" fill="white"/>
+    <rect x="330" y="70"  width="100" height="65" rx="3" fill="white"/>
+    <rect x="430" y="40"  width="12"  height="100" fill="white"/>
+    <rect x="260" y="110" width="12"  height="80"  fill="white"/>
+    <rect x="620" y="110" width="12"  height="80"  fill="white"/>
+    <rect x="150" y="185" width="60"  height="40"  rx="2" fill="white"/>
+    <rect x="230" y="185" width="60"  height="40"  rx="2" fill="white"/>
+    <rect x="310" y="185" width="60"  height="40"  rx="2" fill="white"/>
+    <rect x="390" y="185" width="60"  height="40"  rx="2" fill="white"/>
+    <rect x="470" y="185" width="60"  height="40"  rx="2" fill="white"/>
+    <rect x="550" y="185" width="60"  height="40"  rx="2" fill="white"/>
+    <rect x="630" y="185" width="60"  height="40"  rx="2" fill="white"/>
+  </svg>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="stats-grid">
+    <div class="stat-item reveal">
+      <span class="stat-num">28%</span>
+      <span class="stat-label">das exportações brasileiras passam por Santos</span>
+    </div>
+    <div class="stat-item reveal d1">
+      <span class="stat-num">5.700</span>
+      <span class="stat-label">navios atracam em Santos por ano</span>
+    </div>
+    <div class="stat-item reveal d2">
+      <span class="stat-num">13 mi</span>
+      <span class="stat-label">TEUs movimentados por ano</span>
+    </div>
+    <div class="stat-item reveal d3">
+      <span class="stat-num">4 mi</span>
+      <span class="stat-label">habitantes na Baixada Santista</span>
+    </div>
+  </div>
+</div>
+
+<!-- LOGÍSTICA -->
+<section id="logistica" class="block">
+  <div class="section-inner">
+    <span class="section-tag reveal">📦 Conceito</span>
+    <h2 class="section-title reveal">O que é <span>Logística</span>?</h2>
+    <p class="section-lead reveal">Pensa assim: você pediu um tênis numa loja online. Como ele chega na sua porta? É a logística que cuida de tudo isso — do estoque, do transporte, da entrega. É a arte de fazer as coisas chegarem no lugar certo, na hora certa.</p>
+    <div class="intro-grid">
+      <div class="intro-card reveal">
+        <span class="card-icon">🏭</span>
+        <h3>Armazenagem</h3>
+        <p>Os produtos ficam guardados em galpões chamados <strong>armazéns</strong> enquanto esperam para ser transportados ou vendidos. É como uma grande despensa organizada.</p>
+      </div>
+      <div class="intro-card sky-top reveal d1">
+        <span class="card-icon">🚢</span>
+        <h3>Transporte Marítimo</h3>
+        <p>Navios gigantes carregam contêineres de um país para outro. É o meio mais barato para mover grandes volumes — 90% do comércio mundial é feito pelo mar!</p>
+      </div>
+      <div class="intro-card navy-top reveal d2">
+        <span class="card-icon">🚚</span>
+        <h3>Transporte Terrestre</h3>
+        <p>Caminhões e trens levam os produtos do porto até as cidades e lojas. No Brasil, o caminhão é o rei — a maioria das cargas vai por estrada.</p>
+      </div>
+      <div class="intro-card reveal">
+        <span class="card-icon">📊</span>
+        <h3>Controle de Estoque</h3>
+        <p>Saber o que tem, quanto tem e onde está. Sem esse controle, as lojas ficam sem produto ou cheias de coisa que não vende. É aqui que o banco de dados entra!</p>
+      </div>
+      <div class="intro-card sky-top reveal d1">
+        <span class="card-icon">📍</span>
+        <h3>Rastreamento</h3>
+        <p>Já rastreou um pedido e viu "saiu para entrega"? Isso é logística em tempo real. Cada passo é registrado em sistemas de computador.</p>
+      </div>
+      <div class="intro-card navy-top reveal d2">
+        <span class="card-icon">🔄</span>
+        <h3>Logística Reversa</h3>
+        <p>Quando você devolve um produto, ele precisa voltar para algum lugar. Essa "volta" também é logística — e é importantíssima para o meio ambiente!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTO -->
+<section id="porto" class="block dark porto-section">
+  <div class="section-inner">
+    <span class="section-tag reveal">⚓ Porto</span>
+    <h2 class="section-title reveal">Porto de Santos — <span>O Maior da América Latina</span></h2>
+    <p class="section-lead reveal">O Porto de Santos fica no litoral de São Paulo e é o coração do comércio exterior brasileiro. É por onde entram e saem bilhões de reais em produtos todo ano.</p>
+    <div class="porto-grid">
+      <div class="porto-visual reveal">
+        <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="180" width="400" height="80" fill="#0a2a4a"/>
+          <rect x="0" y="170" width="400" height="18" fill="#0d3560"/>
+          <path d="M0 190 Q50 183 100 190 Q150 197 200 190 Q250 183 300 190 Q350 197 400 190" stroke="#1565c0" stroke-width="2" fill="none" opacity=".5"/>
+          <path d="M0 208 Q60 201 120 208 Q180 215 240 208 Q300 201 360 208 Q380 211 400 208" stroke="#1565c0" stroke-width="1.5" fill="none" opacity=".35"/>
+          <!-- navio -->
+          <rect x="60"  y="152" width="200" height="26" fill="#1e3a5f" rx="4"/>
+          <rect x="90"  y="128" width="140" height="28" fill="#243f6e" rx="3"/>
+          <!-- chaminé -->
+          <rect x="200" y="104" width="13"  height="28" fill="#2B6CB0" rx="2"/>
+          <!-- contêineres no navio -->
+          <rect x="100" y="133" width="22" height="18" fill="#0B1F3A" rx="1"/>
+          <rect x="126" y="133" width="22" height="18" fill="#2B6CB0" rx="1"/>
+          <rect x="152" y="133" width="22" height="18" fill="#1A3A6B" rx="1"/>
+          <rect x="178" y="133" width="22" height="18" fill="#4A90D9" rx="1"/>
+          <!-- guindastes -->
+          <rect x="30"  y="98"  width="5"  height="76" fill="#37474f"/>
+          <rect x="18"  y="98"  width="66" height="5"  fill="#37474f"/>
+          <line x1="30" y1="98" x2="84"  y2="103" stroke="#546e7a" stroke-width="2"/>
+          <rect x="80"  y="103" width="4"  height="28" fill="#546e7a"/>
+          <rect x="310" y="90"  width="5"  height="84" fill="#37474f"/>
+          <rect x="295" y="90"  width="66" height="5"  fill="#37474f"/>
+          <line x1="315" y1="90" x2="296" y2="95" stroke="#546e7a" stroke-width="2"/>
+          <rect x="291" y="95"  width="4"  height="32" fill="#546e7a"/>
+          <!-- cais -->
+          <rect x="0" y="162" width="400" height="12" fill="#1e2d40"/>
+          <!-- armazéns -->
+          <rect x="10"  y="118" width="38" height="46" fill="#122040" rx="2"/>
+          <polygon points="10,118 29,104 48,118" fill="#0d1a30"/>
+          <rect x="350" y="108" width="38" height="56" fill="#122040" rx="2"/>
+          <polygon points="350,108 369,94 388,108" fill="#0d1a30"/>
+          <text x="200" y="230" text-anchor="middle" fill="#4a7ab5" font-size="10" font-family="Inter,sans-serif">Porto de Santos — Santos / SP</text>
+          <text x="200" y="247" text-anchor="middle" fill="#2a5a8a" font-size="8"  font-family="Inter,sans-serif">Maior porto da América Latina</text>
+        </svg>
+      </div>
+      <div class="porto-facts">
+        <div class="porto-fact reveal">
+          <span class="porto-fact-icon">📏</span>
+          <div><h4>Tamanho Gigante</h4><p>São 7,7 km de extensão de cais. Andar de ponta a ponta levaria quase 2 horas a pé!</p></div>
+        </div>
+        <div class="porto-fact reveal d1">
+          <span class="porto-fact-icon">📦</span>
+          <div><h4>O que passa por lá?</h4><p>Soja, açúcar, automóveis, eletrônicos, combustíveis, fertilizantes e muito mais. Praticamente tudo que o Brasil exporta ou importa.</p></div>
+        </div>
+        <div class="porto-fact reveal d2">
+          <span class="porto-fact-icon">🏗️</span>
+          <div><h4>Terminais Especializados</h4><p>O porto tem áreas separadas para cada tipo de carga: grãos, contêineres, veículos. Tudo muito organizado!</p></div>
+        </div>
+        <div class="porto-fact reveal">
+          <span class="porto-fact-icon">📅</span>
+          <div><h4>História Desde 1892</h4><p>Inaugurado na época do café, são mais de 130 anos movimentando a economia brasileira.</p></div>
+        </div>
+        <div class="porto-fact reveal d1">
+          <span class="porto-fact-icon">💰</span>
+          <div><h4>Peso na Economia</h4><p>Movimenta mais de 150 milhões de toneladas por ano — equivale ao peso de ~600 mil Boeing 737 cheios.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSO -->
+<section id="processo" class="block flow-section">
+  <div class="section-inner">
+    <span class="section-tag reveal">🔄 Processo</span>
+    <h2 class="section-title reveal">Como uma Carga <span>Viaja pelo Mundo</span>?</h2>
+    <p class="section-lead reveal">Desde a fábrica até a sua casa, um produto pode percorrer milhares de quilômetros passando por várias etapas. Veja como funciona na prática:</p>
+    <div class="steps-grid">
+      <div class="step-item reveal">
+        <div class="step-left"><div class="step-num">1</div><span class="step-icon">🏭</span></div>
+        <div class="step-text"><h4>Produção</h4><p>O produto é fabricado — pode ser um celular na China, sapato no Brasil ou soja no Mato Grosso.</p></div>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-left"><div class="step-num alt">2</div><span class="step-icon">📦</span></div>
+        <div class="step-text"><h4>Embalagem e Despacho</h4><p>O produto é embalado, etiquetado e registrado. Documentos alfandegários são preparados.</p></div>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-left"><div class="step-num">3</div><span class="step-icon">🚚</span></div>
+        <div class="step-text"><h4>Transporte ao Porto</h4><p>Caminhões levam a carga até o porto — no Brasil, a maioria vai por estrada.</p></div>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-left"><div class="step-num alt">4</div><span class="step-icon">🏗️</span></div>
+        <div class="step-text"><h4>Terminal Portuário</h4><p>A carga chega, passa pela alfândega, é inspecionada e colocada no contêiner.</p></div>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-left"><div class="step-num">5</div><span class="step-icon">🚢</span></div>
+        <div class="step-text"><h4>Embarque no Navio</h4><p>Guindastes gigantes colocam os contêineres no navio. Um navio grande carrega 20 mil contêineres!</p></div>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-left"><div class="step-num alt">6</div><span class="step-icon">🌍</span></div>
+        <div class="step-text"><h4>Travessia Oceânica</h4><p>O navio navega dias ou semanas. Santos até a Europa leva cerca de 14 dias.</p></div>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-left"><div class="step-num">7</div><span class="step-icon">📋</span></div>
+        <div class="step-text"><h4>Desembaraço Aduaneiro</h4><p>No destino, fiscais inspecionam a carga. Impostos de importação são cobrados.</p></div>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-left"><div class="step-num alt">8</div><span class="step-icon">🏠</span></div>
+        <div class="step-text"><h4>Entrega Final</h4><p>Caminhões locais levam o produto até lojas, distribuidores ou direto ao consumidor.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANCO DE DADOS -->
+<section id="banco" class="block db-section">
+  <div class="section-inner">
+    <span class="section-tag reveal">💾 Tecnologia</span>
+    <h2 class="section-title reveal">Banco de Dados na <span>Logística</span></h2>
+    <p class="section-lead reveal">Imagina controlar milhões de contêineres, navios, motoristas e cargas — tudo ao mesmo tempo. É impossível fazer no papel! É por isso que existem os bancos de dados.</p>
+    <div class="db-grid">
+      <div class="db-visual reveal">
+        <p class="db-top-label">ESTRUTURA DO BANCO — PORTO_LOGISTICA</p>
+        <div class="db-table">
+          <div class="db-table-name">📦 CARGA</div>
+          <div class="db-field"><span class="db-fn">id_carga</span><span><span class="db-pk">PK</span> <span class="db-ft">INT</span></span></div>
+          <div class="db-field"><span class="db-fn">descricao</span><span class="db-ft">VARCHAR(200)</span></div>
+          <div class="db-field"><span class="db-fn">peso_toneladas</span><span class="db-ft">DECIMAL</span></div>
+          <div class="db-field"><span class="db-fn">tipo_carga</span><span class="db-ft">VARCHAR(50)</span></div>
+          <div class="db-field"><span class="db-fn">id_conteiner</span><span class="db-ft">FK → INT</span></div>
+        </div>
+        <div class="db-arrow">↓ relaciona com</div>
+        <div class="db-table">
+          <div class="db-table-name">🚢 NAVIO</div>
+          <div class="db-field"><span class="db-fn">id_navio</span><span><span class="db-pk">PK</span> <span class="db-ft">INT</span></span></div>
+          <div class="db-field"><span class="db-fn">nome_navio</span><span class="db-ft">VARCHAR(100)</span></div>
+          <div class="db-field"><span class="db-fn">bandeira_pais</span><span class="db-ft">CHAR(2)</span></div>
+          <div class="db-field"><span class="db-fn">capacidade_teu</span><span class="db-ft">INT</span></div>
+          <div class="db-field"><span class="db-fn">data_atracacao</span><span class="db-ft">DATETIME</span></div>
+        </div>
+        <div class="db-arrow">↓ relaciona com</div>
+        <div class="db-table">
+          <div class="db-table-name">📍 TERMINAL</div>
+          <div class="db-field"><span class="db-fn">id_terminal</span><span><span class="db-pk">PK</span> <span class="db-ft">INT</span></span></div>
+          <div class="db-field"><span class="db-fn">nome_terminal</span><span class="db-ft">VARCHAR(80)</span></div>
+          <div class="db-field"><span class="db-fn">tipo_especialidade</span><span class="db-ft">VARCHAR(50)</span></div>
+          <div class="db-field"><span class="db-fn">capacidade_teus</span><span class="db-ft">INT</span></div>
+        </div>
+      </div>
+      <div class="db-explains">
+        <div class="db-ei reveal">
+          <h4>🤔 O que é um Banco de Dados?</h4>
+          <p>É como uma planilha super organizada que vive no computador. Em vez de um caderno bagunçado, os dados ficam em tabelas e o computador encontra qualquer informação em frações de segundo.</p>
+        </div>
+        <div class="db-ei alt reveal d1">
+          <h4>📌 O que é uma Chave Primária (PK)?</h4>
+          <p>É um número único para cada registro — como o CPF é único para cada pessoa. Assim, mesmo dois navios com o mesmo nome são diferentes no sistema.</p>
+        </div>
+        <div class="db-ei reveal">
+          <h4>🔗 O que é uma Chave Estrangeira (FK)?</h4>
+          <p>É quando uma tabela "aponta" para outra. Exemplo: a tabela CARGA aponta para NAVIO, dizendo "essa carga está nesse navio". As tabelas ficam conectadas!</p>
+        </div>
+        <div class="db-ei alt reveal d1">
+          <h4>🔍 Por que isso é importante?</h4>
+          <p>O Porto de Santos processa milhares de cargas por dia. Sem banco de dados, seria impossível saber onde está cada contêiner, qual navio está atrasado ou quando um produto chega.</p>
+        </div>
+        <div class="db-ei reveal">
+          <h4>💡 Exemplos no Dia a Dia</h4>
+          <p>Quando você rastreia uma encomenda nos Correios, você está consultando um banco de dados. O mesmo acontece quando o banco exibe seu saldo ou a Netflix sugere um filme!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BAIXADA SANTISTA -->
+<section id="baixada" class="block baixada-section">
+  <div class="section-inner">
+    <span class="section-tag reveal">🌊 Região</span>
+    <h2 class="section-title reveal">A <span>Baixada Santista</span> e a Logística</h2>
+    <p class="section-lead reveal">A Baixada Santista é muito mais do que praias — é uma das regiões mais estratégicas do Brasil para o comércio e a logística. Conheça por quê!</p>
+    <div class="baixada-grid">
+      <div class="baixada-info">
+        <div class="baixada-card reveal">
+          <div class="baixada-icon">🗺️</div>
+          <div><h4>Localização Estratégica</h4><p>Fica a apenas 70 km de São Paulo, a maior cidade da América do Sul. Essa proximidade com o maior mercado consumidor do Brasil é um trunfo enorme.</p></div>
+        </div>
+        <div class="baixada-card reveal d1">
+          <div class="baixada-icon lt">🏙️</div>
+          <div><h4>Cidades da Região</h4><p>São 9 municípios: Santos, São Vicente, Guarujá, Cubatão, Praia Grande, Mongaguá, Itanhaém, Peruíbe e Bertioga — todos conectados pela economia portuária.</p></div>
+        </div>
+        <div class="baixada-card reveal d2">
+          <div class="baixada-icon blue">🏭</div>
+          <div><h4>Polo Industrial de Cubatão</h4><p>Um dos maiores complexos industriais do Brasil. Fábricas de fertilizantes, petroquímicas e siderúrgicas produzem insumos que saem pelo Porto de Santos.</p></div>
+        </div>
+        <div class="baixada-card reveal">
+          <div class="baixada-icon">🛤️</div>
+          <div><h4>Infraestrutura de Acesso</h4><p>Via Anchieta, Rodovia dos Imigrantes e ramal ferroviário ligam o porto ao interior — essencial para mover cargas pesadas.</p></div>
+        </div>
+        <div class="baixada-card reveal d1">
+          <div class="baixada-icon lt">🐟</div>
+          <div><h4>Porto Pesqueiro</h4><p>A logística do pescado é delicadíssima — exige câmaras frias e transporte rápido para chegar fresquinho às mesas.</p></div>
+        </div>
+      </div>
+      <div class="mapa-wrap reveal">
+        <svg viewBox="0 0 320 400" xmlns="http://www.w3.org/2000/svg">
+          <rect width="320" height="400" fill="#0B1F3A"/>
+          <!-- continente -->
+          <path d="M0,0 L320,0 L320,175 Q280,165 260,180 Q240,195 220,185 Q200,175 180,190 Q160,205 140,196 Q110,185 80,205 Q50,225 30,215 Q10,210 0,215 Z" fill="#1A3A6B" opacity=".9"/>
+          <!-- ilha santos/sv -->
+          <path d="M70,210 Q90,200 120,205 Q150,210 170,200 Q190,195 210,203 Q222,220 210,235 Q190,250 160,255 Q130,260 100,253 Q76,244 70,230 Z" fill="#2B6CB0"/>
+          <!-- guarujá -->
+          <path d="M215,195 Q235,188 255,195 Q265,210 260,225 Q245,237 228,233 Q215,223 215,210 Z" fill="#2B6CB0"/>
+          <!-- bertioga -->
+          <path d="M265,190 Q285,180 308,187 Q314,205 304,220 Q285,230 265,220 Q258,207 265,195 Z" fill="#2B6CB0"/>
+          <!-- praia grande -->
+          <path d="M0,245 Q30,235 60,250 Q90,260 95,280 Q80,305 50,315 Q20,320 0,310 Z" fill="#2B6CB0"/>
+          <!-- labels -->
+          <text x="155" y="230" text-anchor="middle" fill="#fff"    font-size="9"   font-family="Inter,sans-serif" font-weight="700">SANTOS</text>
+          <text x="155" y="241" text-anchor="middle" fill="#9fc4ec" font-size="7"   font-family="Inter,sans-serif">⚓ Porto</text>
+          <text x="240" y="213" text-anchor="middle" fill="#b0d0ff" font-size="7.5" font-family="Inter,sans-serif">GUARUJÁ</text>
+          <text x="287" y="208" text-anchor="middle" fill="#b0d0ff" font-size="7"   font-family="Inter,sans-serif">BERTIOGA</text>
+          <text x="128" y="227" text-anchor="middle" fill="#b0d0ff" font-size="7"   font-family="Inter,sans-serif">SÃO VICENTE</text>
+          <text x="40"  y="283" text-anchor="middle" fill="#b0d0ff" font-size="7"   font-family="Inter,sans-serif">PRAIA GRANDE</text>
+          <!-- cubatão -->
+          <circle cx="140" cy="170" r="5" fill="#4A90D9" stroke="#fff" stroke-width="1.2"/>
+          <text x="152" y="173" fill="#4A90D9" font-size="8"   font-family="Inter,sans-serif">CUBATÃO</text>
+          <text x="152" y="182" fill="#9fc4ec" font-size="6.5" font-family="Inter,sans-serif">🏭 Polo Industrial</text>
+          <!-- sp indicação -->
+          <text x="60" y="55" fill="#7a9cc4" font-size="8" font-family="Inter,sans-serif">↑ São Paulo (70km)</text>
+          <!-- rodovia -->
+          <line x1="140" y1="170" x2="130" y2="205" stroke="#4A90D9" stroke-width="2" stroke-dasharray="4,2"/>
+          <!-- norte -->
+          <text x="290" y="30" fill="#4a7ab5" font-size="10" font-family="Inter,sans-serif" font-weight="700">N</text>
+          <line x1="294" y1="32" x2="294" y2="20" stroke="#4a7ab5" stroke-width="1.5"/>
+          <polygon points="294,14 290,22 298,22" fill="#4a7ab5"/>
+          <!-- legenda -->
+          <rect x="8" y="355" width="155" height="40" rx="4" fill="#0B1F3A" opacity=".9"/>
+          <circle cx="20" cy="368" r="4" fill="#4A90D9"/>
+          <text x="30" y="371" fill="#ccc" font-size="7" font-family="Inter,sans-serif">Polo Industrial</text>
+          <line x1="16" y1="380" x2="28" y2="380" stroke="#4A90D9" stroke-width="1.5" stroke-dasharray="3,2"/>
+          <text x="32" y="383" fill="#ccc" font-size="7" font-family="Inter,sans-serif">Rodovias</text>
+          <rect x="16" y="388" width="8" height="5" rx="1" fill="#1A3A6B"/>
+          <text x="28" y="393" fill="#ccc" font-size="7" font-family="Inter,sans-serif">Área terrestre</text>
+          <!-- título -->
+          <rect x="0" y="0" width="320" height="20" fill="rgba(11,31,58,.85)"/>
+          <text x="160" y="13" text-anchor="middle" fill="#7ab3e0" font-size="8" font-family="Inter,sans-serif" font-weight="700" letter-spacing="1">BAIXADA SANTISTA — LITORAL DE SP</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GLOSSÁRIO -->
+<section id="glossario" class="block dark glossary-section">
+  <div class="section-inner">
+    <span class="section-tag reveal">📖 Glossário</span>
+    <h2 class="section-title reveal">Palavras que Você Vai <span>Ouvir Bastante</span></h2>
+    <p class="section-lead reveal">O mundo da logística tem muitos termos técnicos. Aqui explicamos os principais de um jeito simples — sem complicação!</p>
+    <div class="gloss-grid">
+      <div class="gloss-item reveal">
+        <div class="gloss-term">📦 Contêiner (TEU)</div>
+        <p class="gloss-def">Caixão metálico padronizado para transportar cargas. TEU = Twenty-foot Equivalent Unit. É a unidade de medida dos portos.</p>
+      </div>
+      <div class="gloss-item alt1 reveal d1">
+        <div class="gloss-term">🛃 Alfândega</div>
+        <p class="gloss-def">Órgão do governo que fiscaliza e controla tudo que entra ou sai do país. Cobra impostos de importação e evita contrabando.</p>
+      </div>
+      <div class="gloss-item alt2 reveal d2">
+        <div class="gloss-term">📄 Conhecimento de Embarque (B/L)</div>
+        <p class="gloss-def">Bill of Lading — documento que comprova que a carga foi colocada no navio. É tipo o "recibo" do frete marítimo.</p>
+      </div>
+      <div class="gloss-item reveal">
+        <div class="gloss-term">🏗️ Guindaste RTG</div>
+        <p class="gloss-def">Rubber-Tired Gantry — guindaste sobre rodas de borracha que movimenta contêineres no pátio do porto. Parece um robô gigante!</p>
+      </div>
+      <div class="gloss-item alt1 reveal d1">
+        <div class="gloss-term">🚢 Frete</div>
+        <p class="gloss-def">O preço cobrado para transportar uma carga de um lugar para outro. Pode ser por caminhão, navio ou avião.</p>
+      </div>
+      <div class="gloss-item alt2 reveal d2">
+        <div class="gloss-term">🔄 Modal</div>
+        <p class="gloss-def">O tipo de transporte usado. Rodoviário = caminhão. Marítimo = navio. Aéreo = avião. Mais de um = "multimodal".</p>
+      </div>
+      <div class="gloss-item reveal">
+        <div class="gloss-term">💾 ERP Logístico</div>
+        <p class="gloss-def">Software que controla tudo: estoque, vendas, transporte, finanças. É onde o banco de dados "vive" no dia a dia.</p>
+      </div>
+      <div class="gloss-item alt1 reveal d1">
+        <div class="gloss-term">📍 Tracking / Rastreamento</div>
+        <p class="gloss-def">Sistema de acompanhamento da carga em tempo real. O GPS do caminhão, o sensor do contêiner — tudo alimenta um banco de dados.</p>
+      </div>
+      <div class="gloss-item alt2 reveal d2">
+        <div class="gloss-term">⚓ Atracação</div>
+        <p class="gloss-def">Quando o navio amarra no cais do porto para descarregar ou carregar mercadorias. A fila de navios esperando chama-se "fundeio".</p>
+      </div>
+      <div class="gloss-item reveal">
+        <div class="gloss-term">🌐 Supply Chain</div>
+        <p class="gloss-def">Cadeia de Suprimentos — todo o caminho de um produto, da matéria-prima ao consumidor. A logística cuida de não deixar essa cadeia travar.</p>
+      </div>
+      <div class="gloss-item alt1 reveal d1">
+        <div class="gloss-term">📊 WMS</div>
+        <p class="gloss-def">Warehouse Management System — software de gestão de armazém. Controla onde cada produto está na prateleira, quando entrou e quando sai.</p>
+      </div>
+      <div class="gloss-item alt2 reveal d2">
+        <div class="gloss-term">🚢 Cabotagem</div>
+        <p class="gloss-def">Navegação entre portos do mesmo país. Alternativa ao caminhão entre o Sul e o Nordeste — mais lenta, porém mais barata e sustentável.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CURIOSIDADES -->
+<section class="block curio-section">
+  <div class="section-inner">
+    <span class="section-tag reveal">💡 Você Sabia?</span>
+    <h2 class="section-title reveal">Curiosidades que vão te <span>Impressionar</span></h2>
+    <p class="section-lead reveal">Fatos surpreendentes sobre logística, portos e tecnologia que poucos conhecem.</p>
+    <div class="curio-grid">
+      <div class="curio-card reveal">
+        <div class="curio-header"><span class="curio-emoji">🐢</span><h4>A Internet é culpa dos portos?</h4></div>
+        <div class="curio-body"><p>O contêiner padronizado foi inventado em 1956 por Malcolm McLean. Antes dele, descarregar um navio demorava dias. Essa padronização inspirou a ideia de "pacotes de dados" na internet!</p></div>
+      </div>
+      <div class="curio-card reveal d1">
+        <div class="curio-header alt2"><span class="curio-emoji">🛳️</span><h4>Navio maior que o Empire State</h4></div>
+        <div class="curio-body"><p>Os maiores navios do mundo têm mais de 400 metros de comprimento — maior que o Empire State virado de lado! Carregam até 24.000 contêineres.</p></div>
+      </div>
+      <div class="curio-card reveal d2">
+        <div class="curio-header alt1"><span class="curio-emoji">💾</span><h4>Terabytes de dados diários</h4></div>
+        <div class="curio-body"><p>O Porto de Santos gera terabytes de dados por dia — posição de navios, movimentação de contêineres, dados de fiscalização. Bancos de dados rodando 24/7.</p></div>
+      </div>
+      <div class="curio-card reveal">
+        <div class="curio-header"><span class="curio-emoji">☕</span><h4>O café que construiu Santos</h4></div>
+        <div class="curio-body"><p>Santos virou o principal porto do Brasil graças ao café no século XIX. O Brasil respondia por mais de 70% do café mundial. O porto foi construído para escoar essa produção!</p></div>
+      </div>
+      <div class="curio-card reveal d1">
+        <div class="curio-header alt2"><span class="curio-emoji">🤖</span><h4>Portos que se operam sozinhos</h4></div>
+        <div class="curio-body"><p>Terminais totalmente automatizados, como o de Rotterdam (Holanda), têm robôs e IA fazendo tudo — sem trabalhadores no pátio. O banco de dados comanda tudo!</p></div>
+      </div>
+      <div class="curio-card reveal d2">
+        <div class="curio-header alt1"><span class="curio-emoji">🌱</span><h4>Logística Verde</h4></div>
+        <div class="curio-body"><p>O setor naval está migrando para navios a metanol, amônia e hidrogênio. Um navio bem otimizado gasta menos combustível por tonelada do que um caminhão!</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">⚓ Rota <span>Zar013</span></div>
+  <p>Trabalho Escolar — Logística, Porto de Santos e Banco de Dados</p>
+  <small>Conteúdo educativo desenvolvido para fins acadêmicos · Baixada Santista, SP</small>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
